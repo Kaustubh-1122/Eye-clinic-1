@@ -14,8 +14,8 @@ export default function Navbar() {
         <Link to="/" className="group flex min-w-0 items-center gap-2 sm:gap-3" onClick={() => setOpen(false)}>
           <Logo className="h-10 w-10 shrink-0 sm:h-11 sm:w-11" />
           <span className="leading-tight transition group-hover:text-teal-dark">
-            <span className="block font-display text-[1.08rem] font-bold tracking-[-0.02em]">Dr. Bhalerao</span>
-            <span className="block text-[0.65rem] font-bold uppercase tracking-[0.19em] text-teal-dark">Eye Care</span>
+            <span className="block font-display text-[1.08rem] font-bold tracking-[-0.02em]">AR Eye Care</span>
+            <span className="block text-[0.62rem] font-bold uppercase tracking-[0.14em] text-teal-dark">Contact Lens Clinic</span>
           </span>
         </Link>
         <nav className="hidden items-center gap-7 md:flex" aria-label="Main">

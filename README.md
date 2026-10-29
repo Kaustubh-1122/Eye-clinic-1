@@ -1,4 +1,5 @@
-# Dr. Bhalerao Eye Care website
+
+# AR Eye Care & Contact Lens Clinic website
 
 React 18 + Vite + Tailwind CSS 3 + React Router.
 
