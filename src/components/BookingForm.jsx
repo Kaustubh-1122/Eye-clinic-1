@@ -13,14 +13,14 @@ export default function BookingForm() {
     setSent(true)
   }
   return (
-    <form onSubmit={submit} className="grid gap-4 rounded-3xl bg-white p-6 text-ink shadow-xl sm:p-8">
+    <form onSubmit={submit} className="grid gap-4 rounded-2xl bg-white p-4 text-ink shadow-xl sm:rounded-3xl sm:p-8">
       <label className="grid gap-1 text-sm font-medium">Your name
         <input required className="field" value={f.name} onChange={set('name')} autoComplete="name" />
       </label>
       <label className="grid gap-1 text-sm font-medium">Mobile number
         <input required type="tel" pattern="[0-9+ ]{10,14}" title="Enter a valid mobile number" className="field" value={f.phone} onChange={set('phone')} autoComplete="tel" />
       </label>
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-4 md:grid-cols-2">
         <label className="grid gap-1 text-sm font-medium">Reason for visit
           <select className="field" value={f.service} onChange={set('service')}>{services.map((s) => <option key={s.id}>{s.title}</option>)}</select>
         </label>

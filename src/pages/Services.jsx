@@ -4,7 +4,7 @@ import ServiceArt from '../components/ServiceArt.jsx'
 
 export default function Services() {
   return (
-    <section className="mx-auto max-w-6xl px-5 py-20">
+    <section className="mx-auto max-w-6xl px-4 py-14 sm:px-5 sm:py-20">
       <h1 className="text-4xl font-bold sm:text-5xl">Our services</h1>
       <p className="mt-4 max-w-xl text-lg text-ink/80">Every visit starts with a full eye examination so we can recommend only what you need.</p>
       <div className="mt-12 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">

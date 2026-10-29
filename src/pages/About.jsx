@@ -3,7 +3,7 @@ import { clinic } from '../data/clinic.js'
 
 export default function About() {
   return (
-    <section className="mx-auto max-w-4xl px-5 py-20">
+    <section className="mx-auto max-w-4xl px-4 py-14 sm:px-5 sm:py-20">
       <h1 className="text-4xl font-bold sm:text-5xl">About {clinic.name}</h1>
       <div className="mt-8 grid gap-10 md:grid-cols-[1fr_1.4fr]">
         <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem] bg-petal shadow-lg shadow-ink/10">

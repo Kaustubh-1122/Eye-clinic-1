@@ -14,21 +14,21 @@ export default function Home() {
   return (
     <>
       <section className="relative overflow-hidden bg-mist">
-        <div className="blob absolute -right-24 -top-24 h-[480px] w-[480px] bg-sun/70" aria-hidden="true" />
+        <div className="blob absolute -right-20 -top-20 h-72 w-72 bg-sun/70 sm:-right-24 sm:-top-24 sm:h-[480px] sm:w-[480px]" aria-hidden="true" />
         <div className="blob absolute -bottom-32 -left-20 h-72 w-72 bg-teal/15" aria-hidden="true" />
-        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-[1.1fr_1fr] md:py-24">
+        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 py-14 sm:px-5 sm:py-16 md:grid-cols-[1.1fr_1fr] md:py-24">
           <div>
             <p className="font-display text-xl text-teal-dark">नमस्कार, welcome</p>
-            <h1 className="mt-3 text-5xl leading-[1.05] sm:text-7xl">Your eyes deserve more than a quick glance.</h1>
-            <p className="mt-6 max-w-md text-lg text-ink/80">A friendly eye clinic in New Sangavi, Pimpri-Chinchwad. Thorough check-ups, honest advice and care for the whole family.</p>
+            <h1 className="mt-3 max-w-2xl text-4xl leading-[1.05] sm:text-6xl lg:text-7xl">Your eyes deserve more than a quick glance.</h1>
+            <p className="mt-5 max-w-md text-base text-ink/80 sm:mt-6 sm:text-lg">A friendly eye clinic in New Sangavi, Pimpri-Chinchwad. Thorough check-ups, honest advice and care for the whole family.</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/contact#book" className="btn btn-primary">Book appointment</Link>
               <a href={`tel:${clinic.tel}`} className="btn btn-ghost">Call {clinic.phone}</a>
             </div>
           </div>
           <div className="relative flex justify-center">
-            <div className="rounded-[2.5rem] bg-white p-6 shadow-2xl shadow-ink/10"><EyeArt /></div>
-            <div className="bob absolute -bottom-6 -left-2 rounded-2xl bg-ink px-5 py-3 text-white shadow-xl sm:left-4">
+            <div className="w-full max-w-lg rounded-3xl bg-white p-4 shadow-2xl shadow-ink/10 sm:rounded-[2.5rem] sm:p-6"><EyeArt /></div>
+            <div className="bob absolute -bottom-5 left-1 rounded-2xl bg-ink px-4 py-3 text-white shadow-xl sm:-bottom-6 sm:left-4 sm:px-5">
               <p className="font-display text-3xl leading-none">{clinic.rating} <span className="text-sun">★</span></p>
               <p className="mt-1 text-xs text-white/80">{clinic.reviews} Google reviews</p>
             </div>
@@ -36,7 +36,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-24">
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-5 sm:py-24">
         <h2 className="max-w-xl text-4xl sm:text-5xl">What we take care of</h2>
         <p className="mt-3 max-w-lg text-ink/75">From first glasses to sight-saving screening, everything starts with a proper examination.</p>
         <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -51,7 +51,7 @@ export default function Home() {
       </section>
 
       <section className="bg-petal">
-        <div className="mx-auto max-w-6xl px-5 py-20">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-5 sm:py-20">
           <h2 className="text-4xl sm:text-5xl">What happens at your visit</h2>
           <ol className="mt-10 grid gap-6 md:grid-cols-3">
             {steps.map(([t, d], i) => (
@@ -67,7 +67,7 @@ export default function Home() {
 
       <section className="relative overflow-hidden bg-ink text-white">
         <span className="absolute -right-4 -top-10 select-none font-display text-[16rem] leading-none text-sun/20" aria-hidden="true">E</span>
-        <div className="relative mx-auto max-w-6xl px-5 py-20">
+        <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-5 sm:py-20">
           <h2 className="max-w-lg text-4xl sm:text-5xl">Can you read the letter on the right?</h2>
           <p className="mt-4 max-w-lg text-white/80">Take our two-minute eye test from your sofa. It is a handy first look, not a replacement for an eye examination.</p>
           <Link to="/eye-test" className="btn btn-sun mt-8">Start the eye test</Link>
@@ -75,7 +75,7 @@ export default function Home() {
       </section>
 
       <section id="book" className="bg-mist">
-        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-24 md:grid-cols-2">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-5 sm:py-24 md:grid-cols-2">
           <div>
             <h2 className="text-4xl sm:text-5xl">Book your visit</h2>
             <p className="mt-4 max-w-md text-ink/80">Tell us what you need and which day suits you. The clinic will call or message to confirm a time.</p>
